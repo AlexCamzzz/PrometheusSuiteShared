@@ -1,0 +1,6 @@
+﻿/bin/
+/obj/
+
+# Carpetas de compilación de .NET
+[Bb]in/
+[Oo]bj/
