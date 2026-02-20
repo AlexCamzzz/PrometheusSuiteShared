@@ -1,0 +1,11 @@
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\bin\Release\net8.0\PrometheusSuite.Shared.deps.json
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\bin\Release\net8.0\PrometheusSuite.Shared.dll
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\bin\Release\net8.0\PrometheusSuite.Shared.pdb
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\PrometheusSuite.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\PrometheusSuite.Shared.AssemblyInfoInputs.cache
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\PrometheusSuite.Shared.AssemblyInfo.cs
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\PrometheusSuite.Shared.csproj.CoreCompileInputs.cache
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\PrometheusSuite.Shared.dll
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\refint\PrometheusSuite.Shared.dll
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\PrometheusSuite.Shared.pdb
+D:\Development\C#\Prometheus Suite\PrometheusSuite.Shared\obj\Release\net8.0\ref\PrometheusSuite.Shared.dll
