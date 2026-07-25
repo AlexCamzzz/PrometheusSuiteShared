@@ -1,4 +1,4 @@
-﻿using PrometheusSuite.Shared.Enums;
+using PrometheusSuite.Shared.Enums;
 
 namespace PrometheusSuite.Shared.Dtos.Sales;
 
@@ -28,6 +28,10 @@ public class SaleDto
     public required Guid LastModifiedBy { get; set; }
     
     public required DateTime LastModifiedOn { get; set; }
+    
+    public string? PdfName { get; set; }
+    public string? Base64Pdf { get; set; }
+    public string? PdfUrl { get; set; }
     
     //Nested Pieces List
     public List<PieceDto>? Pieces { get; set; } 

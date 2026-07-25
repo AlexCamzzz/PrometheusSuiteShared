@@ -6,7 +6,8 @@
         <Nullable>enable</Nullable>
         <Configurations>Debug;Release;Paquetelleguexpress</Configurations>
         <Platforms>AnyCPU</Platforms>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     </PropertyGroup>
+    
+    
 
 </Project>
