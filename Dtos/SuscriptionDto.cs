@@ -1,4 +1,4 @@
-﻿using PrometheusSuite.Shared.Enums;
+using PrometheusSuite.Shared.Enums;
 
 namespace PrometheusSuite.Shared.Dtos;
 
@@ -9,4 +9,6 @@ public class SuscriptionDto
     public required DateTime EndDate { get; set; }
     
     public required string HardwareId { get; set; }
+    public required bool IsAiEnabled { get; set; }
+    public required bool IsNativeTrackingEnabled { get; set; }
 }

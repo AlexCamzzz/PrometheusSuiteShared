@@ -1,4 +1,4 @@
-﻿namespace PrometheusSuite.Shared.Dtos;
+namespace PrometheusSuite.Shared.Dtos;
 
 public class CreateBranchDto
 {
@@ -6,5 +6,6 @@ public class CreateBranchDto
     public required string Email { get; set; }
     public required string Phone { get; set; }
     public required string LicenseKey { get; set; }
-    
+    public bool IsAiEnabled { get; set; }
+    public bool IsNativeTrackingEnabled { get; set; }
 }
