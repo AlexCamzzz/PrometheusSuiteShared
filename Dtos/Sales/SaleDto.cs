@@ -1,4 +1,5 @@
 using PrometheusSuite.Shared.Enums;
+using PrometheusSuite.Shared.Dtos.Inventory;
 
 namespace PrometheusSuite.Shared.Dtos.Sales;
 
@@ -21,6 +22,7 @@ public class SaleDto
     public required DateTime Date { get; set; }
     public required ShippingStatus StatusEnvio { get; set; }
     public required decimal Total { get; set; }
+    public required decimal ShippingTotal { get; set; }
     public required decimal BaseQuote { get; set; }
     
     public required bool IsPiecesAdjusted { get; set; } = false;
@@ -35,8 +37,26 @@ public class SaleDto
     
     //Nested Pieces List
     public List<PieceDto>? Pieces { get; set; } 
+
+    // Inventario consumido por la venta
+    public List<SaleProductDto> Products { get; set; } = new();
+    public List<SaleSupplyDto> SuppliesUsed { get; set; } = new();
     
     public TransactionDto? Transaction { get; set; }
     
 }
 
+public sealed class SaleProductDto
+{
+    public string ProductId { get; set; } = string.Empty;
+    public string ProductName { get; set; } = string.Empty;
+    public decimal UnitPrice { get; set; }
+    public int Quantity { get; set; }
+}
+
+public sealed class SaleSupplyDto
+{
+    public string SupplyId { get; set; } = string.Empty;
+    public string SupplyName { get; set; } = string.Empty;
+    public int Units { get; set; } = 1;
+}
