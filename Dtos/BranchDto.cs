@@ -1,4 +1,4 @@
-﻿namespace PrometheusSuite.Shared.Dtos;
+namespace PrometheusSuite.Shared.Dtos;
 
 public class BranchDto
 {
@@ -13,6 +13,8 @@ public class BranchDto
     public required int TransactionsQty { get; set; }
     
     public required decimal ExpectedMoney { get; set; }
+    
+    public decimal CardFeePercentage { get; set; } = 0.0m;
     
     public required SuscriptionDto Suscription { get; set; }
 
