@@ -1,4 +1,5 @@
 using System;
+using System.Text.Json.Serialization;
 using PrometheusSuite.Shared.Enums;
 
 namespace PrometheusSuite.Shared.Dtos.Coupons;
@@ -17,6 +18,24 @@ public class CouponDto
     public bool IsActive { get; set; } = true;
     public string? Description { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+    [JsonIgnore]
+    public bool IsPercentage => Type == CouponDiscountType.Percentage;
+
+    [JsonIgnore]
+    public string FormattedValue => Type == CouponDiscountType.Percentage
+        ? $"{Value:N0}%"
+        : $"${Value:N2}";
+
+    [JsonIgnore]
+    public string FormattedDiscountText => Type == CouponDiscountType.Percentage
+        ? $"{Value:N0}% de descuento"
+        : $"${Value:N2} de descuento";
+
+    [JsonIgnore]
+    public string TypeLabel => Type == CouponDiscountType.Percentage
+        ? "Porcentual"
+        : "Monto Fijo";
 }
 
 public class ValidateCouponRequestDto
