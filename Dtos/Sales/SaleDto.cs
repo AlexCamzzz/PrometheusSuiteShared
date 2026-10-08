@@ -25,6 +25,9 @@ public class SaleDto
     public required decimal ShippingTotal { get; set; }
     public required decimal BaseQuote { get; set; }
     
+    public string? CouponCode { get; set; }
+    public decimal DiscountApplied { get; set; } = 0;
+    
     public required bool IsPiecesAdjusted { get; set; } = false;
     
     public required Guid LastModifiedBy { get; set; }
